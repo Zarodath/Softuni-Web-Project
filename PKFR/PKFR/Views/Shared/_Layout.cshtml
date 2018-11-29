@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="~/images/19093051_10154477781756126_1964964848138660069_o.jpg">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PKFR</title>
+    <title>PKFR - @ViewData["Title"]</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/General.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,7 +18,8 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#000000">
+        
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,18 +28,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">PKFR</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <a href="@Url.Action("/Index", "Home")" class="navbar-brand">
+                        <img class="img-logo" src="~/images/logo.png" width="120px" height="120px" alt="" />
+                    </a>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="NewsAndEvents">News & Events</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Guides">Guides</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Forum">Forum</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
                 <partial name="_LoginPartial" />
             </div>
         </div>
-    </nav>
+    </div>
+    
+
+
+
+
 
     <partial name="_CookieConsentPartial" />
 
@@ -45,7 +58,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - PKFR</p>
+            <p>&copy; 2018 - PKFR   (PKFRBulgaria is a student project, I do not hold any copyright of images etc.)</p>
         </footer>
     </div>
 
