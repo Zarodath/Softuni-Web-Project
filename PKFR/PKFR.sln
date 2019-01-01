@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKFR", "PKFR\PKFR.csproj", "{3AEFC699-85BC-434A-A963-76131B9F01BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Web", "PKFR\PKFR.Web.csproj", "{3AEFC699-85BC-434A-A963-76131B9F01BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Models", "PKFR.Models\PKFR.Models.csproj", "{63548623-6A31-4934-BD0F-4D3158695202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKFR.Data", "PKFR.Data\PKFR.Data.csproj", "{839CE1F2-ED3B-45C3-B159-6AE555F6737B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3AEFC699-85BC-434A-A963-76131B9F01BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AEFC699-85BC-434A-A963-76131B9F01BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AEFC699-85BC-434A-A963-76131B9F01BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63548623-6A31-4934-BD0F-4D3158695202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63548623-6A31-4934-BD0F-4D3158695202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63548623-6A31-4934-BD0F-4D3158695202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63548623-6A31-4934-BD0F-4D3158695202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839CE1F2-ED3B-45C3-B159-6AE555F6737B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839CE1F2-ED3B-45C3-B159-6AE555F6737B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839CE1F2-ED3B-45C3-B159-6AE555F6737B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839CE1F2-ED3B-45C3-B159-6AE555F6737B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
