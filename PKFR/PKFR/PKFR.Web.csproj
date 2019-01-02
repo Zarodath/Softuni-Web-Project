@@ -15,8 +15,4 @@
     <ProjectReference Include="..\PKFR.Data\PKFR.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Identity\Services\" />
-  </ItemGroup>
-
 </Project>

@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PKFR.Data;
+using PKFR.Web.Models;
+using PKFR.Web.Areas.Identity.Data;
 
 namespace PKFR
 {
@@ -35,18 +37,13 @@ namespace PKFR
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options =>
 
-                {
-                    options.Password.RequiredLength = 6;
-                    options.Password.RequireUppercase = false;
-                    options.Password.RequireLowercase = false;
-                }
-            )
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContext<PKFRContext>(options =>
+                options.UseSqlServer(
+                    this.Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDefaultIdentity<PKFRUser>()
+                .AddEntityFrameworkStores<PKFRContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

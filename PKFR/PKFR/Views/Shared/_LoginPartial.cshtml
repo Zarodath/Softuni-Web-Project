@@ -1,7 +1,9 @@
 @using Microsoft.AspNetCore.Identity
+@using PKFR.Web.Areas.Identity.Data;
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+
+@inject SignInManager<PKFRUser> SignInManager
+@inject UserManager<PKFRUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {
