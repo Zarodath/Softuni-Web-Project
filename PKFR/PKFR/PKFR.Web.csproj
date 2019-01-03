@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PKFR.Data\PKFR.Data.csproj" />
+    <ProjectReference Include="..\PKFR.Models\PKFR.Data.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Web", "PKFR\PKFR.Web.csproj", "{3AEFC699-85BC-434A-A963-76131B9F01BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Models", "PKFR.Models\PKFR.Models.csproj", "{63548623-6A31-4934-BD0F-4D3158695202}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Data.Models", "PKFR.Models\PKFR.Data.Models.csproj", "{63548623-6A31-4934-BD0F-4D3158695202}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKFR.Data", "PKFR.Data\PKFR.Data.csproj", "{839CE1F2-ED3B-45C3-B159-6AE555F6737B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKFR.Data", "PKFR.Data\PKFR.Data.csproj", "{839CE1F2-ED3B-45C3-B159-6AE555F6737B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B0DC001E-F313-4D72-9422-B619817CA011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63548623-6A31-4934-BD0F-4D3158695202} = {B0DC001E-F313-4D72-9422-B619817CA011}
+		{839CE1F2-ED3B-45C3-B159-6AE555F6737B} = {B0DC001E-F313-4D72-9422-B619817CA011}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C4EF975-6F88-4B30-B1ED-2406A0688572}
